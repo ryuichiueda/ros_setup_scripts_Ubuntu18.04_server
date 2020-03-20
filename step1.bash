@@ -37,6 +37,7 @@ echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
 grep -F "ROS_HOSTNAME" ~/.bashrc ||
 echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 
+sudo chown $USER:$USER $HOME/.ros/ -R
 
 ### instruction for user ###
 set +xv
